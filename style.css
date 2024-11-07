@@ -9,8 +9,6 @@ body{
     overflow-y: hidden;
     background-color: rgba(0, 0, 0, 0.264);
 }
-.parent{
-}
 
 /* background video */
 
@@ -92,4 +90,8 @@ body{
     font-family: "Pixelar Regular W01 Regular";
     font-size: max(1.7vw,18px);
     padding: 0 10px;
+}
+.foot span{
+    font-size: max(2.1vw, 24px);
+
 }
