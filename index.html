@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="parent">
+        <div class="background-clip">
+            <video src="/video/minecraft-sunset.960x540.mp4" autoplay loop plays-inline></video>
+            <audio src="/audio/8b0b49dcab54157bb02ef81380990dac2a187b99.ogg" loop autoplay></audio>
+            <audio src="/audio/Click_stereo.ogg"></audio>
+        </div>
+
+        <div class="title">
+            <img src="/img/Minecraft-java-edition-2021.svg" alt="MINECRAFT">
+            <!-- <div class="title1"><p>JAVA EDITION</p></div> -->
+        </div>
+
+        <div class="button">
+
+            <div class="but" onclick="audio.play();">Singleplayer</div>
+            <div class="but" onclick="audio.play();">Multiplayer</div>
+            <div class="but" onclick="audio.play();">Minecraft Realms</div>
+
+            <div class="sbut">
+                <div class="smallbut" onclick="audio.play();">Options...</div>
+                <div class="smallbut" onclick="audio.play();">Quit Game</div>
+            </div>
+        </div>
+
+        <div class="foot">
+            <p>Minecraft 1.21.1/modified</p>
+            <p>Copyright Henil. Do not disturb!</p>
+        </div>
+
+    </div>
+
+    <script>
+        const audio=new Audio();
+        audio.src="/audio/Click_stereo.ogg";
+    </script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+@import url(https://db.onlinewebfonts.com/c/b2e75c336df191233b3096682c9ee6be?family=Pixelar+Regular+W01+Regular);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-color: rgba(0, 0, 0, 0.264);
+}
+.parent{
+}
+
+/* background video */
+
+.background-clip{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+
+}
+.background-clip video{
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    /* filter: blur(2); */
+    filter:brightness(80%);
+}
+
+/*title */
+.title{
+    display: grid;
+    place-items: center;
+    margin-top: 3%;
+}
+.title img{
+    width: max(25%,400px);
+}
+
+/* Buttons */
+
+.button{
+    text-align: center;
+    color: white;
+    font-family: "Pixelar Regular W01 Regular";
+    font-size: max(1.7vw,18px);
+    display: grid;
+    place-items: center;
+    margin-top: max(7%,100px);
+}
+.but{
+    width: max(27%,300px);
+    height: max(80%,30px);
+    background-image: url(/img/large-button.png);
+    border: 2px solid black;
+    padding: 3px 0 5px;
+    margin-bottom: 0.7%;
+}
+.but:hover{
+    border: 2px solid rgb(230, 225, 225);
+    cursor: default;
+}
+
+.sbut{
+    display: flex;
+    justify-content: space-between;
+    width: max(27%,300px);
+}
+.smallbut{
+    background-image: url(/img/large-button.png);
+    border: 2px solid black;
+    width: 47%;
+    padding: 3px 0 5px;
+    margin-top: 3%;
+}
+.smallbut:hover{
+    border: 2px solid rgb(230, 225, 225);
+    cursor: default;
+}
+
+/* foot-text */
+
+.foot{
+    width: 100%;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    justify-content: space-between;
+    color: white;
+    font-family: "Pixelar Regular W01 Regular";
+    font-size: max(1.7vw,18px);
+    padding: 0 10px;
+}
