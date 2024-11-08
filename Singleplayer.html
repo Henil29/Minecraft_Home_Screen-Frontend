@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/Singleplayer.css">
     <title>Document</title>
 </head>
+
 <body>
     <div class="parent">
 
@@ -14,7 +16,42 @@
             <audio src="/audio/8b0b49dcab54157bb02ef81380990dac2a187b99.ogg" loop autoplay></audio>
             <audio src="/audio/Click_stereo.ogg"></audio>
         </div>
-        
+
+        <div class="sin-page">
+
+            <div class="tit"><p class="bg">Game</p></div>
+            
+            <div class="button bg">
+                
+                <div class="tex">
+                    <p class="tex-p">
+                        World Name
+                    </p>
+                </div>
+    
+                <div class="in">
+                    <input type="text" value="New World" class="but-in">
+                </div>
+
+                <div class="but" onclick="audio.play();">Game Mode: Survival</div>
+                <div class="but" onclick="audio.play();">Difficulty: Normal</div>
+                <div class="but" onclick="audio.play();">Allow Commands: OFF</div>
+                <a href=""></a>
+
+            </div>
+
+            <div class="foot-button bg">
+                <div class="foot-btn" onclick="audio.play();">Create New World</div>
+                <div class="foot-btn" onclick="audio.play();"><a href="/index.html" onclick="audio.play();">Cancle</a></div>
+            </div>
+        </div>
+
     </div>
+
+    <script>
+        const audio=new Audio();
+        audio.src="/audio/Click_stereo.ogg";
+    </script>
 </body>
+
 </html>
