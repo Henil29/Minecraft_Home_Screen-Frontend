@@ -20,7 +20,7 @@
 
         <div class="button">
 
-            <div class="but" onclick="audio.play();"><a href="/Singleplayer.html" onclick="audio.play();">Singleplayer</a></div>
+            <div class="but" onclick="Singleplayer()">Singleplayer</div>
             <div class="but" onclick="audio.play();">Multiplayer</div>
             <div class="but" onclick="audio.play();">Minecraft Realms</div>
 
@@ -38,8 +38,15 @@
     </div>
 
     <script>
-        const audio=new Audio();
-        audio.src="/audio/Click_stereo.ogg";
+        const audio=new Audio("/audio/Click_stereo.ogg");
+        
+        function Singleplayer() {
+            audio.play();
+            
+            setTimeout(() => {
+            window.open("/Singleplayer.html", "_self"); 
+        }, 200);
+        }
     </script>
 </body>
 </html>

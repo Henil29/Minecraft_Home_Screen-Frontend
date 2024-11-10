@@ -36,21 +36,27 @@
                 <div class="but" onclick="audio.play();">Game Mode: Survival</div>
                 <div class="but" onclick="audio.play();">Difficulty: Normal</div>
                 <div class="but" onclick="audio.play();">Allow Commands: OFF</div>
-                <a href=""></a>
 
             </div>
 
             <div class="foot-button bg">
                 <div class="foot-btn" onclick="audio.play();">Create New World</div>
-                <div class="foot-btn" onclick="audio.play();"><a href="/index.html" onclick="audio.play();">Cancle</a></div>
+                <div class="foot-btn" onclick="cancle()">Cancle</div>
             </div>
         </div>
 
     </div>
 
     <script>
-        const audio=new Audio();
-        audio.src="/audio/Click_stereo.ogg";
+        const audio=new Audio("/audio/Click_stereo.ogg");
+        
+        function cancle(){
+            audio.play();
+            setTimeout(() => {
+                window.open("/index.html", "_self"); 
+            }, 200);
+        }
+
     </script>
 </body>
 

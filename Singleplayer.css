@@ -82,9 +82,6 @@ body{
     place-items: center;
     margin-top: max(7%,100px);
 }
-.button a{
-    text-decoration: none;
-}
 .but{
     width: max(27%,300px);
     height: max(80%,30px);
