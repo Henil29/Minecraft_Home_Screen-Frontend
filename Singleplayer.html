@@ -33,28 +33,29 @@
                     <input type="text" value="New World" class="but-in">
                 </div>
 
-                <div class="but" onclick="audio.play();">Game Mode: Survival</div>
-                <div class="but" onclick="audio.play();">Difficulty: Normal</div>
-                <div class="but" onclick="audio.play();">Allow Commands: OFF</div>
+                <div class="but" onclick="audio.play();" onmouseover="hover.play()">Game Mode: Survival</div>
+                <div class="but" onclick="audio.play();" onmouseover="hover.play()">Difficulty: Normal</div>
+                <div class="but" onclick="audio.play();" onmouseover="hover.play()">Allow Commands: OFF</div>
 
             </div>
 
             <div class="foot-button bg">
-                <div class="foot-btn" onclick="audio.play();">Create New World</div>
-                <div class="foot-btn" onclick="cancle()">Cancle</div>
+                <div class="foot-btn" onclick="audio.play();" onmouseover="hover.play()">Create New World</div>
+                <div class="foot-btn" onclick="cancle()" onmouseover="hover.play()">Cancle</div>
             </div>
         </div>
-
+        <a href=></a>
     </div>
 
     <script>
-        const audio=new Audio("/audio/Click_stereo.ogg");
+        const audio=new Audio("/audio/gta-san-andreas-ah-shit-here-we-go-again_BWv0Gvc.mp3");
+        const hover=new Audio("/audio/dry-fart.mp3")
         
         function cancle(){
             audio.play();
             setTimeout(() => {
                 window.open("/index.html", "_self"); 
-            }, 200);
+            }, 3000);
         }
 
     </script>
