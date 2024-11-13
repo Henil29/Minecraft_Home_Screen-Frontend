@@ -33,29 +33,75 @@
                     <input type="text" value="New World" class="but-in">
                 </div>
 
-                <div class="but" onclick="audio.play();" onmouseover="hover.play()">Game Mode: Survival</div>
-                <div class="but" onclick="audio.play();" onmouseover="hover.play()">Difficulty: Normal</div>
-                <div class="but" onclick="audio.play();" onmouseover="hover.play()">Allow Commands: OFF</div>
+                <div class="but" onclick="changemode();">Game Mode: <span id="mode">Survival</span></div>
+                <div class="but" onclick="difficulty();">Difficulty:
+                    <span id="diff"> Normal</span></div>
+                <div class="but" onclick="commands1();" >Allow Commands: <span id="commands2">OFF</span></div>
 
             </div>
 
             <div class="foot-button bg">
-                <div class="foot-btn" onclick="audio.play();" onmouseover="hover.play()">Create New World</div>
-                <div class="foot-btn" onclick="cancle()" onmouseover="hover.play()">Cancle</div>
+                <div class="foot-btn" onclick="audio.play();" >Create New World</div>
+                <div class="foot-btn" onclick="cancle()" >Cancle</div>
             </div>
         </div>
         <a href=></a>
     </div>
 
     <script>
-        const audio=new Audio("/audio/gta-san-andreas-ah-shit-here-we-go-again_BWv0Gvc.mp3");
-        const hover=new Audio("/audio/dry-fart.mp3")
-        
+        const audio=new Audio("/audio/Click_stereo.ogg");
+        var a1
+        function changemode(){
+            audio.play()
+            if(a1==1){
+                mode.innerHTML="Creative";
+                a1=0
+            }
+            else{
+                mode.innerHTML="Survival";
+                a1=1
+            }
+        }
+
+        var a2
+
+        function difficulty(){
+            audio.play()
+            if(a1==1){
+                diff.innerHTML="Hard";
+                a1=2
+            }
+            else if(a1==2){
+                diff.innerHTML="Peaceful";
+                a1=3
+            }
+            else if(a1==3){
+                diff.innerHTML="Easy";
+                a1=0
+            }
+            else{
+                diff.innerHTML="Normal";
+                a1=1
+            }
+        }
+
+        var a3
+        function commands1(){
+            audio.play()
+            if(a3==1){
+                commands2.innerHTML="ON";
+                a3=0
+            }
+            else{
+                commands2.innerHTML="OFF";
+                a3=1
+            }
+        }
         function cancle(){
             audio.play();
             setTimeout(() => {
                 window.open("/index.html", "_self"); 
-            }, 3000);
+            }, 200);
         }
 
     </script>

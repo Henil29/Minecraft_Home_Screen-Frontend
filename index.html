@@ -20,13 +20,13 @@
 
         <div class="button">
 
-            <div class="but" onclick="Singleplayer()" onmouseover="hover.play()">Singleplayer</div>
-            <div class="but" onclick="audio.play();" onmouseover="hover.play()">Multiplayer</div>
-            <div class="but" onclick="realms.play();" onmouseover="hover.play()">Minecraft Realms</div>
+            <div class="but" onclick="Singleplayer()">Singleplayer</div>
+            <div class="but" onclick="audio.play();">Multiplayer</div>
+            <div class="but" onclick="audio.play();">Minecraft Realms</div>
 
             <div class="sbut">
-                <div class="smallbut" onclick="options.play();" onmouseover="hover.play()">Options...</div>
-                <div class="smallbut" onclick="getoff()" onmouseover="hover.play()">Quit Game</div>
+                <div class="smallbut" onclick="audio.play();">Options...</div>
+                <div class="smallbut" onclick="audio.play();">Quit Game</div>
             </div>
         </div>
 
@@ -39,24 +39,13 @@
 
     <script>
         const audio=new Audio("/audio/Click_stereo.ogg");
-        const hover=new Audio("/audio/gta-menu.mp3")
-        const exit=new Audio("/audio/get-off-my-ridge-you-viet-cong-b-ds.mp3")
-        const options=new Audio("audio/aww-gta-san-andreas.mp3")
-        const realms=new Audio("audio/watchu-doin.mp3")
+
         function Singleplayer() {
             audio.play();
             
             setTimeout(() => {
             window.open("/Singleplayer.html", "_self"); 
         }, 200);
-        }
-
-        function getoff(){
-            exit.play();
-
-            setTimeout(() => {
-                window.close();
-        }, 2500);
         }
         
     </script>
